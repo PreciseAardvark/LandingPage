@@ -349,8 +349,8 @@ p {
 /* Estilos para el contenedor del Menú */
 .cont-menu{
     background-color: rgb(190, 135, 31);
-    width: 400px;
-    height: 100vh;
+    width: 200px;
+    height: 60vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -368,16 +368,17 @@ p {
     list-style: none;
 }
 
-.cont-menu ul li{
+.cont-menu ul a{
     color: white;
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px 30px;
     cursor: pointer;
 }
 
-.cont-menu ul li:hover{
-    background-color: rgb(228,228,228);
-    color: rgb(42,42,42);
+
+.cont-menu ul a:hover{
+    background-color: #ffffff;
+    color: black;
 }
