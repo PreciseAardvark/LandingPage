@@ -21,213 +21,363 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*1 Layout*/
 
-body{
-    text-align: center;
-    font-family: 'Trocchi', serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.7;
+body {
+  text-align: center;
+  font-family: "Trocchi", serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.7;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.tarifas{
-    text-align: left;
+.tarifas {
+  text-align: left;
 }
-.list-services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.list-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.list-services figure{
-    flex-flow: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.list-services figure {
+  flex-flow: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*2 Generic items*/
-.header{
-    height: 400px;
-    background: url(./imagenes/Umaru-chan-wallpaper.jpg) no-repeat center top;
-    background-size: 100%;
+.header {
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+  background: url(./imagenes/Umaru-chan-wallpaper.jpg) no-repeat center top;
+  background-size: 100%;
 }
-.navbar{
-    height: 20%;
-    background-color: #2c3e50;
-    font-size: 1rem;
+.navbar {
+  height: 20%;
+  background-color: #2c3e50;
+  font-size: 1rem;
 }
 .navbar a {
-    color:#FFFFFF;
-    padding: 0 3%;
-    text-decoration: none;
-    border: solid 1px;
+  color: #ffffff;
+  padding: 0 3%;
+  text-decoration: none;
+  border: solid 1px;
 }
-.navbar a:hover{
-    color: orangered;
+.navbar a:hover {
+  color: orangered;
 }
-.title{
-    margin-bottom: 5%;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.title {
+  margin-bottom: 5%;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-p{
-    margin-bottom: 40px;
+p {
+  margin-bottom: 40px;
 }
 
-.btn{
-    
-    border-radius: 20px;
-    padding: 10px 40px;
-    display: inline-block;
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: rgb(32, 32, 202);
+.btn {
+  border-radius: 20px;
+  padding: 10px 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgb(32, 32, 202);
 }
 
 /*3 Parts of the web*/
-.content{
-    padding: 80px 0;
+.content {
+  padding: 80px 0;
 }
-.who{
-    background: url();
-    background-color: #122e48;
-    color: #FFFFFF;
-    
+.who {
+  background: url();
+  background-color: #122e48;
+  color: #ffffff;
 }
-.who p{
-    max-width: 1055px;
-    margin: 0 auto;
+.who p {
+  max-width: 1055px;
+  margin: 0 auto;
 }
-.services{
-    color: #FFFFFF;
-    background-color: #156690;
+.services {
+  color: #ffffff;
+  background-color: #156690;
 }
 
-.tarifas{
-    background: url(./imagenes/gundam-alas.jpg) no-repeat center;
-    background-size: cover;
-    color: #000;
+.tarifas {
+  background: url(./imagenes/gundam-alas.jpg) no-repeat center;
+  background-size: cover;
+  color: #000;
 }
-.tarifas p{
-    max-width: 450px;
+.tarifas p {
+  max-width: 450px;
 }
-.localization{
-    background: rgb(69, 69, 180);
-    color:#fbfbfb;
-    padding-bottom: 0;
+.localization {
+  background: rgb(69, 69, 180);
+  color: #fbfbfb;
+  padding-bottom: 0;
 }
-.localization .map img{
-    max-width: 100%;
-    width:80%;
+.localization .map img {
+  max-width: 100%;
+  width: 80%;
 }
-.contain{
-    max-width: 1055px;
-    margin: 0 auto;
+.contain {
+  max-width: 1055px;
+  margin: 0 auto;
 }
 #map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-  }
-.footer{
-    background-color: #000;
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
-.footer a{
-    display: inline;
-    padding: 10px;
-    font-size: 15px;
-    color: #616161;
-    text-decoration: none;
+.footer {
+  background-color: #000;
 }
-.footer a:hover{
-    color: white;
-}   
+.footer a {
+  display: inline;
+  padding: 10px;
+  font-size: 15px;
+  color: #616161;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+}
 /*4 List*/
-.list-services figure{
-    position: relative;
-    width: 30%;
-    height: 20%;
+.list-services figure {
+  position: relative;
+  width: 30%;
+  height: 20%;
 }
 
-.list-services li{
-    padding: 0 30px;
-    display: flex;
+.list-services li {
+  padding: 0 30px;
+  display: flex;
 }
-.list-services img{
-    position: relative;
-    z-index: 1;
-
+.list-services img {
+  position: relative;
+  z-index: 1;
 }
-.list-services figcaption{
-  
-    left: 0;
-    top: 0;
-    bottom: -40px;
+.list-services figcaption {
+  left: 0;
+  top: 0;
+  bottom: -40px;
 }
-
-@media only screen and (max-width: 800px) {
-    /* .navbar{
-        display: none;
-    } */
-    .title{
-        font-size: 30px;
-    }
-    p{
-        font-size: 25px;
-    }
+/*Media querys*/
+@media only screen and (max-width: 750px) {
+  .navbar {
+    display: none;
   }
+  .title {
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .icono-menu{
+      display: inline-block;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header {
+   height: 200px;
+  }
+  
+}
+
+@media only screen and (min-width: 751px) {
+    .icono-menu {
+        display: none;
+    }
+    
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 20px;
+    cursor: pointer;
+}
+
+ /* Estilos para el ícono del Menú */
+.icono-menu{
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    
+}
+
+.icono-menu img{
+    vertical-align: text-top;
+    cursor: pointer;
+   
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: rgb(190, 135, 31);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
